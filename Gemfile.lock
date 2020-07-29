@@ -263,7 +263,7 @@ DEPENDENCIES
   carrierwave
   carrierwave-qiniu
   coffee-rails (~> 4.2)
-  devise (~> 4.2.0)
+  devise
   figaro
   font-awesome-rails
   intercom-rails
@@ -294,4 +294,4 @@ DEPENDENCIES
   will_paginate
 
 BUNDLED WITH
-   1.15.1
+   2.1.4

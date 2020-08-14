@@ -20,8 +20,9 @@
 # Ignore Byebug command history file.
 .byebug_history
 config/database.yml
+config/secrets.yml
 public/uploads
-public/system/product_images 
+public/system/product_images
 
 # Ignore application configuration
 /config/application.yml

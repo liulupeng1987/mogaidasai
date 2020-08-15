@@ -19,6 +19,8 @@ set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/
 # These are the defaults.
 # set :format_options, command_output: true, log_file: "log/capistrano.log", color: :auto, truncate: :auto
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle')
+
+set :passenger_restart_with_touch, true
 # Default value for :pty is false
 # set :pty, true
 

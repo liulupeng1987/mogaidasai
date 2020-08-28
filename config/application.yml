@@ -12,36 +12,37 @@
 
 
 production:
-  qiniu_access_key: TYBurzNuy6Rok1mdl9Q63AJyPxDcPK7FEA4MWurB  # 你的 qiniu AccessKey
+  qiniu_access_key: Az-KOEJC8BLDoOJdIzNJ_mT_06OHd24ee_ZxKmS_  # 你的 qiniu AccessKey
 
-  qiniu_secret_key: Q81jNwVOIgLlHBeIWHhMib9BtBR4F5gA-udUa-pz  # 你的 qiniu SecretKey
+  qiniu_secret_key: BGLEtJkviDWFslOaHROuuUIe8AzhNSQBNFldoaZy  # 你的 qiniu SecretKey
 
-  qiniu_bucket: jdstore  # 你的 qiniu bucket
+  qiniu_bucket: qianqianmed  # 你的 qiniu bucket
 
-  qiniu_bucket_domain: oqgnjaxh1.bkt.clouddn.com  # 你的 qiniu bucket domain
+  qiniu_bucket_domain: qianqianmed.s3-cn-east-1.qiniucs.com  # 你的 qiniu bucket domain
 
   SEND_CLOUD_USER_NAME: "kerzzi_test_1nSTUP"  # 你的 API_USER
 
   SEND_CLOUD_USER_KEY: "ZlGXq8JTu59dkLsI"  # 你的 API_KEY
 
-  QINIU_ACCESS_KEY: TYBurzNuy6Rok1mdl9Q63AJyPxDcPK7FEA4MWurB
+  QINIU_ACCESS_KEY: Az-KOEJC8BLDoOJdIzNJ_mT_06OHd24ee_ZxKmS_
 
-  QINIU_SECRET_KEY: Q81jNwVOIgLlHBeIWHhMib9BtBR4F5gA-udUa-pz
+  QINIU_SECRET_KEY: BGLEtJkviDWFslOaHROuuUIe8AzhNSQBNFldoaZy
+
 
 
 development:
-  qiniu_access_key: TYBurzNuy6Rok1mdl9Q63AJyPxDcPK7FEA4MWurB  # 你的 qiniu AccessKey
+  qiniu_access_key: Az-KOEJC8BLDoOJdIzNJ_mT_06OHd24ee_ZxKmS_  # 你的 qiniu AccessKey
 
-  qiniu_secret_key: Q81jNwVOIgLlHBeIWHhMib9BtBR4F5gA-udUa-pz  # 你的 qiniu SecretKey
+  qiniu_secret_key: BGLEtJkviDWFslOaHROuuUIe8AzhNSQBNFldoaZy  # 你的 qiniu SecretKey
 
-  qiniu_bucket: jdstore  # 你的 qiniu bucket
+  qiniu_bucket: qianqianmed  # 你的 qiniu bucket
 
-  qiniu_bucket_domain: oqgnjaxh1.bkt.clouddn.com  # 你的 qiniu bucket domain
+  qiniu_bucket_domain: qianqianmed.s3-cn-east-1.qiniucs.com  # 你的 qiniu bucket domain
 
   SEND_CLOUD_USER_NAME: "kerzzi_test_1nSTUP"  # 你的 API_USER
 
   SEND_CLOUD_USER_KEY: "ZlGXq8JTu59dkLsI"  # 你的 API_KEY
 
-  QINIU_ACCESS_KEY: TYBurzNuy6Rok1mdl9Q63AJyPxDcPK7FEA4MWurB
+  QINIU_ACCESS_KEY: Az-KOEJC8BLDoOJdIzNJ_mT_06OHd24ee_ZxKmS_
 
-  QINIU_SECRET_KEY: Q81jNwVOIgLlHBeIWHhMib9BtBR4F5gA-udUa-pz
+  QINIU_SECRET_KEY: BGLEtJkviDWFslOaHROuuUIe8AzhNSQBNFldoaZy

@@ -2,17 +2,17 @@ class ProductImage < ApplicationRecord
 
   belongs_to :product
 
-  # attr_accessible :image
+  #attr_accessible :file
 
   #指定图片尺寸
 
   has_attached_file :image,:path => ":class/:attachment/:id/:basename.:extension", styles: {
-    small: '60^x60',
-    middle: '200^x200',
-    big: "960x"
+    small: '60x60',
+    middle: '200x200',
+    big: "960x960"
   }
 
-  validates :image, :attachment_presence => true
+  validates :file, :attachment_presence => true
 
   #限制上传类型
 

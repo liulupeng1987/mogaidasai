@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
 
   root 'welcome#index'
+  get 'welcome/main' => 'welcome#main'
 
 
   get 'product_images/controller'

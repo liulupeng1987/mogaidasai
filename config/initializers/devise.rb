@@ -196,7 +196,7 @@ Devise.setup do |config|
   #
   # Defines which key will be used when recovering the password for an account
   # config.reset_password_keys = [:email]
-
+  config.secret_key = 'eb7c49f1a0564b3a0e1cd6e27386ed1e9e36df8b27d6751fa3df2c21c45db521f23a5638907644f20650eb4ca6e03ab5294968d5eb65cb32519ac4df9981d22a'
   # Time interval you can reset your password with a reset password key.
   # Don't put a too small interval or your users won't have the time to
   # change their passwords.

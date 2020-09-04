@@ -12,7 +12,7 @@ class ProductImage < ApplicationRecord
     big: "960x960"
   }
 
-  validates :file, :attachment_presence => true
+  validates :image, :attachment_presence => true
 
   #限制上传类型
 

@@ -52,6 +52,7 @@ gem 'carrierwave-qiniu'
 gem 'qiniu-rs'
 gem 'figaro'
 gem 'paperclip-qiniu'
+# gem 'trix-rails', '~> 0.11.4.1'
 # or get the latest version
 # gem 'paperclip-qiniu', :git => "git://github.com/lidaobing/paperclip-qiniu"
 
@@ -59,6 +60,8 @@ gem 'rails-erd'
 gem 'social-share-button'
 gem "intercom-rails"
 gem 'rest-client'
+gem 'summernote-rails'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -60,6 +60,15 @@
           </div>
         </div>
         <div class="form-group">
+          <label for="picture" class="col-sm-2 control-label">图片*:</label>
+          <div class="col-sm-5">
+            <%= f.file_field :image, class: "form-control" %> 必须为整数
+          </div>
+        </div>
+
+
+
+        <div class="form-group">
           <label for="price" class="col-sm-2 control-label">价格*:</label>
           <div class="col-sm-5">
             <%= f.text_field :price, class: "form-control" %>必须为数字
@@ -74,7 +83,8 @@
         <div class="form-group">
           <label for="description" class="col-sm-2 control-label">描述*:</label>
           <div class="col-sm-5">
-            <%= f.text_area :description, class: "form-control" %>
+            <!-- <%= f.text_area :description, class: "form-control" %> -->
+            <%= f.trix_editor :description, class: "form-control" %>
           </div>
         </div>
         <div class="form-group">

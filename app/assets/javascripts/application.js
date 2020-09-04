@@ -15,9 +15,9 @@
 //= require turbolinks
 //= require bootstrap
 //= require bootstrap/alert
-
 //= require social-share-button
 //= require social-share-button/wechat
+//= require summernote
 
 
 // navbar实现变色效果

@@ -52,7 +52,7 @@ gem 'carrierwave-qiniu'
 gem 'qiniu-rs'
 gem 'figaro'
 gem 'paperclip-qiniu'
-gem 'fog'
+
 # gem 'trix-rails', '~> 0.11.4.1'
 # or get the latest version
 # gem 'paperclip-qiniu', :git => "git://github.com/lidaobing/paperclip-qiniu"

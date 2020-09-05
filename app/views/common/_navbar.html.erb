@@ -22,9 +22,9 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                <!-- <li ><%= link_to("首页", root_path) %></li> -->
-                <li><%= link_to("产品", products_path) %></li>
+                <!-- <li><%= link_to("产品", products_path) %></li> -->
                 <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">类别
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">产品分类
                     <span class="caret"></span>
                   </a>
                   <ul class="dropdown-menu">
@@ -35,6 +35,8 @@
                     <% end %>
                   </ul>
                 </li>
+
+
                 <li><%= link_to("关于乾乾", static_pages_about_path) %></li>
                 <li><%= link_to("联系方式", static_pages_contact_path) %></li>
             </ul>

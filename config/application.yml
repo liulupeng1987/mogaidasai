@@ -6,43 +6,14 @@
 # stripe_api_key: sk_test_2J0l093xOyW72XUYJHE4Dv2r
 # stripe_publishable_key: pk_test_ro9jV5SNwGb1yYlQfzG17LHK
 #
-# production:
-#   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
-#   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
-
-
 production:
-  qiniu_access_key: Az-KOEJC8BLDoOJdIzNJ_mT_06OHd24ee_ZxKmS_  # 你的 qiniu AccessKey
-
-  qiniu_secret_key: BGLEtJkviDWFslOaHROuuUIe8AzhNSQBNFldoaZy  # 你的 qiniu SecretKey
-
-  qiniu_bucket: qianqianmed  # 你的 qiniu bucket
-
-  qiniu_bucket_domain: qianqianmed.s3-cn-east-1.qiniucs.com  # 你的 qiniu bucket domain
-
-  SEND_CLOUD_USER_NAME: "kerzzi_test_1nSTUP"  # 你的 API_USER
-
-  SEND_CLOUD_USER_KEY: "ZlGXq8JTu59dkLsI"  # 你的 API_KEY
-
-  QINIU_ACCESS_KEY: Az-KOEJC8BLDoOJdIzNJ_mT_06OHd24ee_ZxKmS_
-
-  QINIU_SECRET_KEY: BGLEtJkviDWFslOaHROuuUIe8AzhNSQBNFldoaZy
-
-
+  AWS_ACCESS_KEY_ID: "AKIA4WGENQVM533ZOWXB"
+  AWS_SECRET_ACCESS_KEY: "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"
+  AWS_REGION: "ap-northeast-1"
+  AWS_BUCKET_NAME: "qianqianmed"
 
 development:
-  qiniu_access_key: Az-KOEJC8BLDoOJdIzNJ_mT_06OHd24ee_ZxKmS_  # 你的 qiniu AccessKey
-
-  qiniu_secret_key: BGLEtJkviDWFslOaHROuuUIe8AzhNSQBNFldoaZy  # 你的 qiniu SecretKey
-
-  qiniu_bucket: qianqianmed  # 你的 qiniu bucket
-
-  qiniu_bucket_domain: qianqianmed.s3-cn-east-1.qiniucs.com  # 你的 qiniu bucket domain
-
-  SEND_CLOUD_USER_NAME: "kerzzi_test_1nSTUP"  # 你的 API_USER
-
-  SEND_CLOUD_USER_KEY: "ZlGXq8JTu59dkLsI"  # 你的 API_KEY
-
-  QINIU_ACCESS_KEY: Az-KOEJC8BLDoOJdIzNJ_mT_06OHd24ee_ZxKmS_
-
-  QINIU_SECRET_KEY: BGLEtJkviDWFslOaHROuuUIe8AzhNSQBNFldoaZy
+  AWS_ACCESS_KEY_ID: "AKIA4WGENQVM533ZOWXB"
+  AWS_SECRET_ACCESS_KEY: "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"
+  AWS_REGION: "ap-northeast-1"
+  AWS_BUCKET_NAME: "qianqianmed"

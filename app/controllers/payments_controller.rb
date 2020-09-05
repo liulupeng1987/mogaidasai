@@ -99,9 +99,9 @@ class PaymentsController < ApplicationController
       "anti_phishing_key" => "",
       "exter_invoke_ip" => "",
       "out_trade_no" => payment.payment_no,
-      "subject" => "Monsoon商品购买(仅供测试)",
+      "subject" => "商品购买(仅供测试)",
       "total_fee" => payment.total_money,
-      "body" => "Monsoon商品购买(仅供测试)",
+      "body" => "商品购买(仅供测试)",
       "_input_charset" => "utf-8",
       "sign_type" => 'MD5',
       "sign" => ""

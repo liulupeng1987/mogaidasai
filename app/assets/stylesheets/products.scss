@@ -174,21 +174,20 @@ font-size: 18px;
   p.price{
     span.rmb{
       color: #666;
-      margin-left: 20px;
+      margin-left: 14px;
     }
     span.price{
-      color: #d7282d;
-      font-size: 30px;
+      color: #666;
+      font-size: 14px;
     }
     span.msrp {
       color: #666;
-      font-size: 20px;
-      text-decoration: line-through;
+      font-size: 14px;
     }
   }
   p.service{
     span.service-detail{
-      margin-left: 20px;
+      margin-left: 14px;
     }
   }
 }

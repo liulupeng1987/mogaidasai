@@ -39,12 +39,12 @@
         <% end %>
       </div>
       <div class="price-service">
-        <p class="price">品牌 <span class="rmb">￥ </span><span class="msrp"><%= @product.brand %></span> </p>
-        <p class="price">型号 <span class="rmb">￥ </span><span class="price"><%= @product.model %></span> </p>
-        <p class="price">产地 <span class="rmb">￥ </span><span class="price"><%= @product.country %></span> </p>
+        <p class="price">品牌: <span class="rmb"> </span><span class="msrp"><%= @product.brand %></span> </p>
+        <p class="price">型号: <span class="rmb"> </span><span class="price"><%= @product.model %></span> </p>
+        <p class="price">产地: <span class="rmb"> </span><span class="price"><%= @product.country %></span> </p>
       </div>
       <div class="quantity-size">
-        <p class="delivery">特点 <span class="delivery"><%= @product.character %></span></p>
+        <p class="delivery">特点: <span class="delivery"><%= @product.character %></span></p>
 
       <div class="row share">
         <div class="col-md-6 ">
@@ -68,22 +68,22 @@
             </li>
           </ul>
           <br />
-          <div class="tab-content">
+          <!-- <div class="tab-content">
             <div class="tab-pane active" id="tab_default_1">
                <p class="product-description"><%= @product.description.html_safe %></p>
-               <p class="product-description2 text-center">产品展示</p>
+               <p class="product-description2 text-center">产品展示</p> -->
                 <!--商品大图展示 -->
-               <div class="row">
+               <!-- <div class="row">
                  <% @product.product_images.each do |product_image| %>
                    <div class="col-xs-12 col-md-12 product-show-detail">
                        <img  src=<%= qiniu_image_path(product_image.image.url) %>>
                    </div>
                  <% end %>
-               </div>
+               </div> -->
 
-            </div><!-- End of tab_default_1 -->
+            <!-- </div><!-- End of tab_default_1 -->
 
-            </div><!-- End of tab-content -->
+            <!-- </div><!-- End of tab-content -->
           </div><!-- End of tabbable-line -->
         </div><!-- End of tabbable-panel -->
       </div><!-- End of tabs -->

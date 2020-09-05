@@ -1,10 +1,314 @@
-// Place all the styles related to the StaticPages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-
+@charset "utf-8";
 
 .history-list {
     // position: relative;
     font-family: 'Hiragino Kaku Gothic Pro', sans-serif;
+}
+
+.mainContents-catch {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22.4px;
+  text-decoration: none solid rgb(102,102,102);
+  test-align: left;
+  word-spacing: 0px;
+
+}
+
+
+
+.dt {
+    display: block;
+}
+
+
+/*--------------------------------------------------------------------------------------
+*
+* company common
+*
+----------------------------------------------------------------------------------------*/
+
+/* title-square
+--------------------------------------------------------*/
+.title-square {
+	padding-left: 17px;
+	font-size: 16px;
+	font-weight: 600;
+	position: relative;
+	margin-bottom: 5px;
+}
+
+.title-square::before {
+	position: absolute;
+	content: "";
+	width: 10px;
+	height: 10px;
+	top: 6px;
+	left: 1px;
+	margin: auto;
+	background: #999;
+}
+
+.title-square-red::before {
+	background: #EB5C01;
+}
+
+/* simple-list
+--------------------------------------------------------*/
+.simple-list {
+	display: flex;
+}
+
+.simple-list-title {
+	width: 32%;
+	padding: 15px 10px;
+	font-weight: bold;
+}
+
+.simple-list-contents {
+	width: 68%;
+	padding: 15px 10px;
+}
+
+
+/* border-list
+--------------------------------------------------------*/
+.border-list-wrap {
+	margin-bottom: 30px;
+}
+
+.border-list {
+	display: flex;
+}
+
+.border-list-title {
+	width: 32%;
+	border-top: 1px solid #ccc;
+	padding: 15px 10px;
+	font-weight: bold;
+}
+
+.border-list:last-child .border-list-title {
+	border-bottom: 1px solid #ccc;
+}
+
+.border-list-contents {
+	width: 68%;
+	border-top: 1px dotted #ccc;
+	padding: 15px 10px;
+}
+
+.border-list:last-child .border-list-contents {
+	border-bottom: 1px dotted #ccc;
+}
+
+/* 中にもう一個リストがある場合 */
+.border-list-second .border-list-contents {
+	padding: 0;
+}
+
+@media screen and (max-width: 568px) {
+	.border-list {
+		font-size: 14px;
+	}
+
+	/* 中にもう一個リストがある場合 */
+	.border-list-second {
+		display: block;
+	}
+
+	.border-list-second .border-list-title,
+	.border-list-second .border-list-contents {
+		display: block;
+		width: 100%;
+	}
+}
+
+
+/* history-list
+--------------------------------------------------------*/
+.history-list {
+	display: flex;
+}
+
+.history-list-title {
+	width: 12%;
+	font-weight: bold;
+	border-top: 1px solid #ccc;
+	padding: 10px 0 10px 10px;
+}
+
+.history-list-contents {
+	width: 88%;
+	border-top: 1px dotted #ccc;
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.history-list-contents dt {
+	font-weight: bold;
+	width: 10%;
+}
+
+.history-list-contents dd {
+	width: 90%;
+}
+
+@media screen and (max-width: 568px) {
+	.history-list-title {
+		width: 5.5em;
+	}
+
+	.history-list-contents {
+		width: calc(100% - 5.5em)
+	}
+
+	.history-list-contents dt {
+		width: 3em;
+	}
+
+	.history-list-contents dd {
+		width: calc(100% - 3em);
+	}
+
+	.history-list {
+		width: 100%;
+		font-size: 14px;
+	}
+}
+
+/* figure-list
+--------------------------------------------------------*/
+.figure-list {
+	margin-top: 30px;
+}
+
+.figure-list-child {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.figure-list-img {
+	width: 122px;
+	text-align: center;
+}
+
+.figure-list-img-02 {
+	width: 184px;
+}
+
+.figure-list-img img {
+	width: auto;
+	height: auto;
+}
+
+.figure-list-img-cap {
+	text-align: left;
+	font-size: 12px;
+	margin-top: 3px;
+}
+
+.figure-list-text {
+	width: 448px;
+}
+
+.figure-list-text-02 {
+	width: 386px;
+}
+
+.figure-list-title {
+	font-weight: bold;
+}
+
+.figure-list-p {
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 568px) {
+	.figure-list-img {
+		width: 25%;
+	}
+
+	.figure-list-img img {
+		width: 100%;
+	}
+
+	.figure-list-text {
+		width: 70%;
+	}
+
+	.figure-list-title {
+		margin-bottom: 5px;
+	}
+
+	.figure-list-child-1column {
+		display: block;
+	}
+
+	.figure-list-child-1column .figure-list-img {
+		width: 85%;
+		margin: 0 auto 10px;
+	}
+
+	.figure-list-child-1column .figure-list-text {
+		width: 100%;
+	}
+}
+
+/* img-card-wrap
+--------------------------------------------------------*/
+.img-card-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.img-card {
+	width: calc((100% - 20px) / 2);
+	background: #fff3ea;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.img-card-img {
+	margin-bottom: 10px;
+	display: block;
+}
+
+.img-card-img img {
+	width: 100%;
+	height: auto;
+}
+
+.img-card-notes {
+	margin-bottom: 3px;
+}
+
+.img-card-title {
+	font-weight: bold;
+}
+
+.img-card-p {
+	font-size: 12px;
+}
+
+@media screen and (max-width: 568px) {
+	.img-card-wrap {
+		display: block;
+	}
+
+	.img-card {
+		width: 100%;
+		padding: 15px;
+	}
+
+	.img-card-notes {
+		font-size: 14px;
+	}
+
+	.img-card-p {
+		font-size: 14px;
+	}
 }

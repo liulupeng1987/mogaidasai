@@ -14,7 +14,7 @@
                 <span class="icon-bar"></span>
               </button>
 
-              <a class="navbar-brand" href="<%= root_path %>"><strong>乾乾</strong></a>
+              <a class="navbar-brand" href="<%= root_path %>"><strong>乾乾医疗</strong></a>
 
             </div>
 
@@ -35,8 +35,8 @@
                     <% end %>
                   </ul>
                 </li>
-                <li><%= link_to("联系方式", static_pages_help_path) %></li>
-                <li><%= link_to("关于", static_pages_about_path) %></li>
+                <li><%= link_to("关于乾乾", static_pages_about_path) %></li>
+                <li><%= link_to("联系方式", static_pages_contact_path) %></li>
             </ul>
             <!-- 搜索框 -->
 
@@ -45,7 +45,7 @@
                   <% if @category %>
                     <input type="hidden" name="category_id" value="<%= @category.id %>" />
                  <% end %>
-                 <input type="text" name="w" value="<%= params[:w] %>" class="form-control search-input" placeholder="<%= @category ? "在 #{@category.title} 下搜索.." : '搜索整站商品..' %>">
+                 <input type="text" name="w" value="<%= params[:w] %>" class="form-control search-input" placeholder="<%= @category ? "在 #{@category.title} 下搜索.." : '搜索整站产品..' %>">
                  <span class="input-group-btn">
                     <button type="submit" class="btn btn-default">搜索</button>
                  </span>
@@ -56,16 +56,9 @@
 
 
             <ul class="nav navbar-nav navbar-right">
-
-               <li>
-                   <%= link_to carts_path do  %>
-                      购物车 <i class="fa fa-shopping-cart"> </i> ( <%= current_cart.products.count %> )
-                   <% end %>
-               </li>
                 <% if !current_user %>
                   <li>
                     <div class="login">
-                      <a href="#" data-toggle="modal" data-target="#signup-modal">注册</a> |
                       <a href="#" data-toggle="modal" data-target="#login-modal">管理员登入</a>
                     </div>
                   </li>

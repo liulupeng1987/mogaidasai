@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
 
-  root 'welcome#index'
+  root 'welcome#main'
   get 'welcome/main' => 'welcome#main'
 
 
@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
 
   get 'static_pages/about'
-  get 'static_pages/help'
+  get 'static_pages/contact'
   get 'static_pages/category'
 
   devise_for :users

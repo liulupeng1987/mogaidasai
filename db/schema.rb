@@ -10,10 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170604150326) do
-
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+ActiveRecord::Schema.define(version: 20200904135608) do
 
   create_table "cart_items", force: :cascade do |t|
     t.integer  "cart_id"
@@ -35,8 +32,8 @@ ActiveRecord::Schema.define(version: 20170604150326) do
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false
     t.string   "ancestry"
-    t.index ["ancestry"], name: "index_categories_on_ancestry", using: :btree
-    t.index ["title"], name: "index_categories_on_title", using: :btree
+    t.index ["ancestry"], name: "index_categories_on_ancestry"
+    t.index ["title"], name: "index_categories_on_title"
   end
 
   create_table "favorites", force: :cascade do |t|
@@ -61,8 +58,8 @@ ActiveRecord::Schema.define(version: 20170604150326) do
     t.string   "aasm_state",       default: "order_placed"
     t.integer  "payment_id"
     t.string   "status",           default: "initial"
-    t.index ["aasm_state"], name: "index_orders_on_aasm_state", using: :btree
-    t.index ["payment_id"], name: "index_orders_on_payment_id", using: :btree
+    t.index ["aasm_state"], name: "index_orders_on_aasm_state"
+    t.index ["payment_id"], name: "index_orders_on_payment_id"
   end
 
   create_table "payments", force: :cascade do |t|
@@ -75,9 +72,9 @@ ActiveRecord::Schema.define(version: 20170604150326) do
     t.text     "raw_response"
     t.datetime "created_at",                                                  null: false
     t.datetime "updated_at",                                                  null: false
-    t.index ["payment_no"], name: "index_payments_on_payment_no", unique: true, using: :btree
-    t.index ["transaction_no"], name: "index_payments_on_transaction_no", using: :btree
-    t.index ["user_id"], name: "index_payments_on_user_id", using: :btree
+    t.index ["payment_no"], name: "index_payments_on_payment_no", unique: true
+    t.index ["transaction_no"], name: "index_payments_on_transaction_no"
+    t.index ["user_id"], name: "index_payments_on_user_id"
   end
 
   create_table "product_images", force: :cascade do |t|
@@ -85,12 +82,12 @@ ActiveRecord::Schema.define(version: 20170604150326) do
     t.integer  "weight",             default: 0
     t.string   "image_file_name"
     t.string   "image_content_type"
-    t.bigint   "image_file_size"
+    t.integer  "image_file_size"
     t.datetime "image_updated_at"
     t.datetime "created_at",                     null: false
     t.datetime "updated_at",                     null: false
-    t.index ["product_id", "weight"], name: "index_product_images_on_product_id_and_weight", using: :btree
-    t.index ["product_id"], name: "index_product_images_on_product_id", using: :btree
+    t.index ["product_id", "weight"], name: "index_product_images_on_product_id_and_weight"
+    t.index ["product_id"], name: "index_product_images_on_product_id"
   end
 
   create_table "product_lists", force: :cascade do |t|
@@ -114,10 +111,14 @@ ActiveRecord::Schema.define(version: 20170604150326) do
     t.string   "status",                               default: "off"
     t.string   "uuid"
     t.decimal  "msrp",        precision: 10, scale: 2
-    t.index ["category_id"], name: "index_products_on_category_id", using: :btree
-    t.index ["status", "category_id"], name: "index_products_on_status_and_category_id", using: :btree
-    t.index ["title"], name: "index_products_on_title", using: :btree
-    t.index ["uuid"], name: "index_products_on_uuid", unique: true, using: :btree
+    t.string   "brand"
+    t.string   "model"
+    t.string   "country"
+    t.text     "character"
+    t.index ["category_id"], name: "index_products_on_category_id"
+    t.index ["status", "category_id"], name: "index_products_on_status_and_category_id"
+    t.index ["title"], name: "index_products_on_title"
+    t.index ["uuid"], name: "index_products_on_uuid", unique: true
   end
 
   create_table "reviews", force: :cascade do |t|
@@ -144,8 +145,8 @@ ActiveRecord::Schema.define(version: 20170604150326) do
     t.boolean  "is_admin",               default: false
     t.string   "name"
     t.string   "address"
-    t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
-    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
   create_table "votes", force: :cascade do |t|
@@ -158,8 +159,8 @@ ActiveRecord::Schema.define(version: 20170604150326) do
     t.integer  "vote_weight"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.index ["votable_id", "votable_type", "vote_scope"], name: "index_votes_on_votable_id_and_votable_type_and_vote_scope", using: :btree
-    t.index ["voter_id", "voter_type", "vote_scope"], name: "index_votes_on_voter_id_and_voter_type_and_vote_scope", using: :btree
+    t.index ["votable_id", "votable_type", "vote_scope"], name: "index_votes_on_votable_id_and_votable_type_and_vote_scope"
+    t.index ["voter_id", "voter_type", "vote_scope"], name: "index_votes_on_voter_id_and_voter_type_and_vote_scope"
   end
 
 end
